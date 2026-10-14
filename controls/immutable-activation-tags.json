@@ -1,0 +1,8 @@
+{
+  "name": "one-test-immutable-fence",
+  "target": "tag",
+  "enforcement": "active",
+  "bypass_actors": [],
+  "conditions": {"ref_name": {"include": ["refs/tags/activation-armed-v2", "refs/tags/activation-consumed-v2"], "exclude": []}},
+  "rules": [{"type": "update"}, {"type": "deletion"}]
+}
